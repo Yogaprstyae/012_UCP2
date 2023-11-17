@@ -86,6 +86,11 @@ fun FormApp(
                         navController.navigate(PengelolaHalaman.Form.name)
                     })
             }
+            composable(route = PengelolaHalaman.Form.name){
+                HalamanSatu(onSubmitButtonClicked = {
+                    navController.navigate(PengelolaHalaman.Summary.name)
+                })
+            }
         }
     }
 }
